@@ -1,6 +1,6 @@
 import flatpickr from 'flatpickr';
 import 'flatpickr/dist/flatpickr.min.css';
-
+import { Notify } from 'notiflix';
 
 const startBtn = document.querySelector('[data-start]');
 const myInput = document.querySelector('input#datetime-picker');
@@ -64,6 +64,7 @@ function convertMs(ms) {
 
   return { days, hours, minutes, seconds };
 }
+
 
 function updateTimerEl({ days, hours, minutes, seconds }) {
   timerEl.days.textContent = days;
