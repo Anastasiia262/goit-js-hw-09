@@ -29,7 +29,6 @@ function onSubmitCreatePromises(e) {
     
     delay += step;
   }
+
+  form.reset();
 }
-
-form.addEventListener('submit', onSubmitCreatePromises);
-
